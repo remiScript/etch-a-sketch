@@ -1,0 +1,24 @@
+* {
+    border: 1px solid black;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.gridItem {
+    margin: 0px;
+    padding: 0px;
+    height: 10px;
+    width: 10px;
+    box-sizing: border-box;
+}
+
+.gridItem:hover {
+    border: 8px solid blue;
+}
