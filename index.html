@@ -9,12 +9,19 @@
     <script src="app.js" defer></script>
 </head>
 <body>
+    <h1>Etch-a-Sketch!</h1>
     <div id="container" class="container"></div>
     <div class="controls">
-        <label for="size">Grid size: 0 - 16</label>
-        <input type="range" name="size" min="1" max="16" id="size" class="slider">
+        <h2>First, create a grid. Select the size:</h2>
+        <label for="size">Grid size: 0 - 32</label>
+        <input type="range" name="size" min="1" max="32" default="12" id="size" class="slider">
         <p>Value: <span id="demo">0</span></p>
-        <input id="newGridButton" type="submit" value="Submit">
+        <input id="newGridButton" class ="button" type="submit" value="Create Grid">
+        <h2>Ready for a new grid? Here are your options:</h2>
+        <input id="clearGridButton" class ="button" type="submit" value="Clear Grid">
+        <input id="clearGridWithNewColorButton" class ="button" type="submit" value="Clear Grid w/ New Color">
+        <input id="rainbowMode" class ="button" type="submit" value="Rainbow Mode">
+        <p id="rainbowIndicator">Rainbow Mode is off.</p>
     </div>
 </body>
 </html>
